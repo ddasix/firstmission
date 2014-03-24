@@ -1,0 +1,17 @@
+hi All Users
+
+ul
+	each user in users
+		li: a(href='/users/#{user.name}') #{user.name} #{user.age} #{user.sex}
+
+h1 New User
+
+form(method='POST', action('/users'))
+	p Name:
+	input#name(type='text', name='name', value='')
+	p Age:
+	input#age(type='text', name='age', value='')
+	p sex:
+	input#sex(type='boolean', name='sex', value='')
+	p
+	button(type='submit') Create

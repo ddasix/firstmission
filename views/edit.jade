@@ -1,0 +1,12 @@
+h1 Edit User
+
+form(method='POST', action('/users/#{user.name}'))
+	input(type='hidden', name='_method',value='PUT')
+	p Name:
+	input#name(type='text', name='name', value='#{user.name}')
+	p Age:
+	input#name(type='text', name='age', value='#{user.age}')
+	p sex:
+	input#name(type='boolean', name='sex', value='#{user.sex}')
+	p
+	button(type='submit') Update

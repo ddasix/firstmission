@@ -1,0 +1,12 @@
+h1 #{user.name}
+
+ul
+	li Age: #{user.age}
+	li Sex: #{user.sex}
+
+ul
+	li: a(href='/users/#{user.name}/edit') Edit
+	li
+		form(action='/users/#{user.name}', method='POST')
+			input(type='hidden',name='_method',value='DELETE')
+			button(type='submit') Delete

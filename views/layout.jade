@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		title= title
+		meta(name='description',content='신효식의 홈페이지입니다.')
+		meta(name="google-site-verification", content="QiOf13crWZZiv3xrF781t32N1RBUpnnv90x2yazry2o")
+		link(rel='stylesheet', href='/stylesheets/style.css',media='all',type='text/css')
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css',media='all',type='text/css')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+	body(data-twttr-rendered="true")
+		include include/header
+		include include/navigation
+		block content
+		include include/footer
+
+		script(src='/javascripts/teaffee.js')

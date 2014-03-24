@@ -1,0 +1,133 @@
+extends layout
+
+block content
+	div#page
+		header#header(role='banner')
+			#header-container.container-1140
+				h1.site-title
+					a(href='/',title='HYOSIK', rel='home')
+						span.initial S
+						span HIN
+						span.initial H
+						span YO
+						span.initial S
+						span IK
+				a#trigger-nav(href='#')
+					span MENU
+					span.opened
+		article#home.contents.back-image
+			div.grid
+			div.container
+		article.article.container
+			#mission.artic
+				.article-header
+					.article-header-contents
+						h2= mission_desc
+			#products.artic
+				.article-header
+					.article-header-contents
+						h2= products_desc
+				.article-contents
+					.products-list
+						ul
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+							li.product-items
+									h3 Image
+									img(src='http://webdesignledger.com/wp-content/uploads/2014/01/trends07.jpg')
+									div.product-tools
+										ul
+											li tool:
+											li server:
+											li production period:
+			#tools.artic
+				.article-header
+					.article-header-contents
+						h2= tools_desc
+				.article-contents
+					.tools-list
+						ul.tools-items
+							- for(var i in tools){
+								li
+									h3= i
+									ul
+										- tools[i].forEach(function(tt){
+											li
+												.tools-backgroud
+													div(class='tool-level-#{tt.level} tool-level')= tt.tool
+										- })
+							- }
+									//-
+										h3= i
+										.tools-backgroud
+											div(class='tool-level-#{tools[i].level} tool-level') #{tools[i].Language} 
+			#team.artic
+				.article-header
+					.article-header-contents
+						h2= team_desc
+			#contact.artic
+				.article-header
+					.article-header-contents
+						h2= contact_desc
